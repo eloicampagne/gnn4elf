@@ -44,8 +44,8 @@ gnn4elf
 
 2. Hyperparameter search / optimization:
     ```bash
-    python IJF_optim.py --config configs/optim_config.yaml
-    python IJF_optim_ff.py --config configs/optim_ff_config.yaml
+    python IJF_optim.py 
+    python IJF_optim_ff.py
     ```
 
 3. Configure an experiment

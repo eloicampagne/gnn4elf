@@ -1,6 +1,6 @@
 # gnn4elf
 
-Graph neural network code and forecasts accompanying the paper "Graph Neural Networks for Electricity Forecasting" (gnn4elf). This repository implements training and evaluation pipelines built on top of the [GraphToolbox package](https://github.com/eloicampagne/graphtoolbox).
+Graph neural network code and forecasts accompanying the paper "Graph Neural Networks for Electricity Load Forecasting" (gnn4elf). This repository implements training and evaluation pipelines built on top of the [GraphToolbox package](https://github.com/eloicampagne/graphtoolbox).
 
 ## Highlights
 - Implements models and training scripts used in the paper.
@@ -71,7 +71,7 @@ If you use this code in your work, please cite the corresponding paper:
 ```bibtex
 @misc{campagne2025graph,
     author = {Campagne, Eloi and Amara-Ouali, Yvenn and Goude, Yannig and Kalogeratos, Argyris},
-    title = {Graph Neural Networks for Electricity Forecasting },
+    title = {Graph Neural Networks for Electricity Load Forecasting},
     year = {2025},
 }
 ```

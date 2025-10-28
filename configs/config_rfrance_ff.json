@@ -1,0 +1,98 @@
+{
+  "Pays_de_la_Loire": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 245,
+      "lr": 0.004277525229075528,
+      "batch_size": 512
+    }
+  },
+  "Nouvelle_Aquitaine": {
+    "params": {
+      "num_layers": 4,
+      "hidden_channels": 263,
+      "lr": 0.004356284660323642,
+      "batch_size": 512
+    }
+  },
+  "Normandie": {
+    "params": {
+      "num_layers": 5,
+      "hidden_channels": 358,
+      "lr": 0.002239436978527525,
+      "batch_size": 512
+    }
+  },
+  "Grand_Est": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 432,
+      "lr": 0.006293899151889905,
+      "batch_size": 512
+    }
+  },
+  "Centre_Val_de_Loire": {
+    "params": {
+      "num_layers": 5,
+      "hidden_channels": 303,
+      "lr": 0.0021344700464932522,
+      "batch_size": 512
+    }
+  },
+  "Occitanie": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 357,
+      "lr": 0.006161098635440302,
+      "batch_size": 512
+    }
+  },
+  "Bourgogne_Franche_Comte": {
+    "params": {
+      "num_layers": 4,
+      "hidden_channels": 461,
+      "lr": 0.0031647260914440777,
+      "batch_size": 512
+    }
+  },
+  "Bretagne": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 359,
+      "lr": 0.003212395111167765,
+      "batch_size": 512
+    }
+  },
+  "Provence_Alpes_Cote_d_Azur": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 450,
+      "lr": 0.004623116070346141,
+      "batch_size": 512
+    }
+  },
+  "Auvergne_Rhone_Alpes": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 312,
+      "lr": 0.005589673727459393,
+      "batch_size": 512
+    }
+  },
+  "Ile_de_France": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 428,
+      "lr": 0.007219523880956681,
+      "batch_size": 512
+    }
+  },
+  "Hauts_de_France": {
+    "params": {
+      "num_layers": 4,
+      "hidden_channels": 349,
+      "lr": 0.0072668288909359035,
+      "batch_size": 512
+    }
+  }
+}

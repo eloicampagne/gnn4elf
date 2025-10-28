@@ -1,0 +1,89 @@
+{
+    "GCNConv": {
+        "adj_matrix": "space",
+        "params": {
+            "num_layers": 1,
+            "hidden_channels": 170,
+            "lr": 0.003,
+            "batch_size": 16,
+            "lam_reg": 0
+        }
+    },
+    "GraphSAGE": {
+        "adj_matrix": "correlation",
+        "params": {
+            "num_layers": 2,
+            "hidden_channels": 401,
+            "lr": 0.0004,
+            "batch_size": 16,
+            "lam_reg": 0
+        }
+    },
+    "GATConv": {
+        "adj_matrix": "gl3sr",
+        "params": {
+            "num_layers": 3,
+            "hidden_channels": 364,
+            "lr": 0.001,
+            "batch_size": 16,
+            "heads": 2,
+            "lam_reg": 0
+        }
+    },
+    "GATv2Conv": {
+        "adj_matrix": "space",
+        "params": {
+            "num_layers": 2,
+            "hidden_channels": 359,
+            "lr": 0.0004,
+            "batch_size": 16,
+            "heads": 2,
+            "lam_reg": 0
+        }
+    },
+    "TransformerConv": {
+        "adj_matrix": "distsplines2",
+        "params": {
+            "num_layers": 1,
+            "hidden_channels": 335,
+            "lr": 0.003,
+            "batch_size": 16,
+            "heads": 2,
+            "lam_reg": 0
+        }
+    },
+    "ChebConv": {
+        "adj_matrix": "distsplines",
+        "params": {
+            "num_layers": 1,
+            "hidden_channels": 249,
+            "lr": 0.0006,
+            "batch_size": 16,
+            "K": 3,
+            "lam_reg": 0
+        }
+    },
+    "TAGConv": {
+        "adj_matrix": "dtw",
+        "params": {
+            "num_layers": 3,
+            "hidden_channels": 329,
+            "lr": 0.0003,
+            "batch_size": 16,
+            "K": 1,
+            "lam_reg": 0
+        }
+    },
+    "APPNP": {
+        "adj_matrix": "space",
+        "params": {
+            "num_layers": 1,
+            "hidden_channels": 106,
+            "lr": 0.002,
+            "batch_size": 16,
+            "K": 1,
+            "alpha": 0.93,
+            "lam_reg": 0
+        }
+    }
+}

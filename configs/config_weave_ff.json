@@ -1,0 +1,218 @@
+{
+  "01_100-MAIN ROAD TOOT BALDON": {
+    "params": {
+      "num_layers": 1,
+      "hidden_channels": 389,
+      "lr": 0.006015633594324377,
+      "batch_size": 16
+    }
+  },
+  "04_180-OLD HIGH STREET RMU 1": {
+    "params": {
+      "num_layers": 5,
+      "hidden_channels": 106,
+      "lr": 0.010698369290764188,
+      "batch_size": 16
+    }
+  },
+  "03_040-COURTLAND ROAD": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 511,
+      "lr": 0.0013370127039537179,
+      "batch_size": 128
+    }
+  },
+  "01_040-COURTLAND ROAD": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 478,
+      "lr": 0.0020293625633874004,
+      "batch_size": 16
+    }
+  },
+  "02_060-VIOLET WAY": {
+    "params": {
+      "num_layers": 4,
+      "hidden_channels": 430,
+      "lr": 0.0028610409595035686,
+      "batch_size": 16
+    }
+  },
+  "03_040-NEW CROSS ROAD": {
+    "params": {
+      "num_layers": 2,
+      "hidden_channels": 316,
+      "lr": 0.00263452227016893,
+      "batch_size": 16
+    }
+  },
+  "03_020-STOKE PLACE": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 428,
+      "lr": 0.005294666255157344,
+      "batch_size": 16
+    }
+  },
+  "03_160-BROAD CLOSE TILBURY FARM": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 502,
+      "lr": 0.002189893836925416,
+      "batch_size": 16
+    }
+  },
+  "01_180-OLD HIGH STREET RMU 1": {
+    "params": {
+      "num_layers": 1,
+      "hidden_channels": 310,
+      "lr": 0.005936776813642953,
+      "batch_size": 16
+    }
+  },
+  "01_060-VIOLET WAY": {
+    "params": {
+      "num_layers": 4,
+      "hidden_channels": 321,
+      "lr": 0.0022149435971610086,
+      "batch_size": 16
+    }
+  },
+  "02_160-BROAD CLOSE TILBURY FARM": {
+    "params": {
+      "num_layers": 2,
+      "hidden_channels": 296,
+      "lr": 0.003802783776808557,
+      "batch_size": 32
+    }
+  },
+  "03_060-VIOLET WAY": {
+    "params": {
+      "num_layers": 5,
+      "hidden_channels": 435,
+      "lr": 0.001941591680069879,
+      "batch_size": 16
+    }
+  },
+  "02_180-OLD HIGH STREET RMU 1": {
+    "params": {
+      "num_layers": 2,
+      "hidden_channels": 247,
+      "lr": 0.004581288808638195,
+      "batch_size": 32
+    }
+  },
+  "03_180-OLD HIGH STREET RMU 1": {
+    "params": {
+      "num_layers": 2,
+      "hidden_channels": 365,
+      "lr": 0.0011597185106235225,
+      "batch_size": 16
+    }
+  },
+  "05_010-PLOWMAN TOWER WESTLAND T1": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 252,
+      "lr": 0.0017859387834495493,
+      "batch_size": 32
+    }
+  },
+  "04_010-PLOWMAN TOWER WESTLAND T1": {
+    "params": {
+      "num_layers": 4,
+      "hidden_channels": 196,
+      "lr": 0.002749604169657455,
+      "batch_size": 16
+    }
+  },
+  "04_060-VIOLET WAY": {
+    "params": {
+      "num_layers": 4,
+      "hidden_channels": 189,
+      "lr": 0.0933291173931643,
+      "batch_size": 32
+    }
+  },
+  "01_040-FOLLY BRIDGE": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 276,
+      "lr": 0.004972926003279467,
+      "batch_size": 16
+    }
+  },
+  "04_040-COURTLAND ROAD": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 200,
+      "lr": 0.0055059468211425535,
+      "batch_size": 16
+    }
+  },
+  "03_030-PEGASUS ROAD": {
+    "params": {
+      "num_layers": 4,
+      "hidden_channels": 162,
+      "lr": 0.0077667366590361536,
+      "batch_size": 16
+    }
+  },
+  "05_040-COURTLAND ROAD": {
+    "params": {
+      "num_layers": 2,
+      "hidden_channels": 168,
+      "lr": 0.0019044632556270151,
+      "batch_size": 32
+    }
+  },
+  "01_040-NEW CROSS ROAD": {
+    "params": {
+      "num_layers": 2,
+      "hidden_channels": 356,
+      "lr": 0.0040918308748786195,
+      "batch_size": 32
+    }
+  },
+  "01_160-BROAD CLOSE TILBURY FARM": {
+    "params": {
+      "num_layers": 4,
+      "hidden_channels": 174,
+      "lr": 0.008294976732905248,
+      "batch_size": 16
+    }
+  },
+  "04_080-ASHMOLEON MUSEUM": {
+    "params": {
+      "num_layers": 4,
+      "hidden_channels": 351,
+      "lr": 0.002087869000580398,
+      "batch_size": 16
+    }
+  },
+  "02_030-PEGASUS ROAD": {
+    "params": {
+      "num_layers": 1,
+      "hidden_channels": 158,
+      "lr": 0.012426343694388258,
+      "batch_size": 16
+    }
+  },
+  "04_030-PEGASUS ROAD": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 271,
+      "lr": 0.0031032000754320846,
+      "batch_size": 64
+    }
+  },
+  "01_010-PLOWMAN TOWER WESTLAND T1": {
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 447,
+      "lr": 0.0039913890973652,
+      "batch_size": 16
+    }
+  }
+}

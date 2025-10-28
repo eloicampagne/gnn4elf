@@ -30,16 +30,17 @@ gnn4elf
 
 ## Requirements
 - Python 3.9+
-- PyTorch 
+- PyTorch
 - GraphToolbox (required; see [GraphToolbox docs](https://eloicampagne.fr/graphtoolbox) for installation)
+- [TiREX](https://github.com/NX-AI/tirex) (for baseline)
 - Usual scientific stack: numpy, pandas, scikit-learn, matplotlib, seaborn
 - (Optional) Jupyter for notebooks
 
 ## Quick start
-
 1. Prepare data
-    - Place datasets under `data/` following the processing expected by scripts.
-    - Graph representations should be in the respective `graph_representations_*` folders.
+    - Download the datasets from [Zenodo](https://zenodo.org/records/17453409?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjJkMzEwODAzLWM2NDMtNDljZi05MTA1LTA3Mjk1NWQ5YmRhMCIsImRhdGEiOnt9LCJyYW5kb20iOiIzN2RjMjZiNDhiNzc5YzQ3NzQ5NTQ5ZDZmN2E0YTc3ZCJ9.WIfAN3nX9wRLfaAQim_BfQmiqiPkwKRKGr-lF2m2cOJM0d0O8rofN76WmcMCE6Pq-ushBaoIB2yZN_C3uKsxWQ).
+    - Place dataset files under `data/` following the preprocessing expected by the scripts.
+    - Put graph representations in the matching folders: `graph_representations_weave/` and `graph_representations_rfrance/`.
 
 2. Hyperparameter search / optimization:
     ```bash

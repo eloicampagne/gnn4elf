@@ -18,9 +18,9 @@ gnn4elf
 ├── results_rfrance/                 # saved forecasts (rfrance)  
 ├── results_weave/                   # saved forecasts (weave)  
 ├── .gitignore  
-├── IJF_expe.ipynb                   # exploratory notebook for IJF experiments  
-├── IJF_optim_ff.py                  # optimization / hyperparam search (feed-forward variant)  
-├── IJF_optim.py                     # optimization / hyperparam search  
+├── expe.ipynb                   # exploratory notebook with experiments  
+├── optim_ff.py                  # optimization / hyperparam search (feed-forward variant)  
+├── optim.py                     # optimization / hyperparam search  
 ├── model.py                         # model definitions (FF architecture)  
 ├── multi.py                         # multitask / multi-node helpers  
 ├── README.md  
@@ -44,8 +44,8 @@ gnn4elf
 
 2. Hyperparameter search / optimization:
     ```bash
-    python IJF_optim.py 
-    python IJF_optim_ff.py
+    python optim.py 
+    python optim_ff.py
     ```
 
 3. Configure an experiment
@@ -63,7 +63,7 @@ gnn4elf
 
 5. Inspect results
     - Results and forecasts are saved in `results_rfrance/` or `results_weave/` depending on dataset.
-    - Use `IJF_expe.ipynb` for exploratory analysis and plotting.
+    - Use `expe.ipynb` for exploratory analysis and plotting.
 
 ## Citation
 If you use this code in your work, please cite the corresponding paper:

@@ -14,9 +14,12 @@ gnn4elf
 ├── configs/                         # experiment configuration files  
 ├── data/                            # datasets folder  
 ├── graph_representations_rfrance/   # graph representations for rfrance dataset  
-├── graph_representations_weave/     # graph representations for weave dataset  
-├── results_rfrance/                 # saved forecasts (rfrance)  
-├── results_weave/                   # saved forecasts (weave)  
+├── graph_representations_weave/     # graph representations for weave dataset
+├── results_chronos/                 # saved forecasts (chronos)  
+├── results_rfrance/                 # saved forecasts for rfrance (gnn)  
+├── results_tabpfn/                  # saved forecasts (tabpfn)  
+├── results_tirex/                   # saved forecasts (tirex)  
+├── results_weave/                   # saved forecasts for weave (gnn)  
 ├── .gitignore  
 ├── expe.ipynb                       # exploratory notebook with experiments  
 ├── optim_ff.py                      # optimization / hyperparam search (feed-forward variant)  
@@ -24,8 +27,8 @@ gnn4elf
 ├── model.py                         # model definitions (FF architecture)  
 ├── multi.py                         # multitask / multi-node helpers  
 ├── README.md  
-├── tirex_expe.ipynb                 # exploratory notebook with TiREX experiments
-├── tirex_util.ipynb                 # TiREX utility functions
+├── fm_expe.ipynb                    # exploratory notebook with foundation models experiments
+├── tirex_util.py                    # TiREX utility functions
 ├── tirex-zs-sequence-test.py        # TiREX training script
 ├── train_gpu_ff.py                  # GPU training script (feed-forward experiments)  
 └── train_gpu.py                     # GPU training script
@@ -36,6 +39,7 @@ gnn4elf
 - PyTorch
 - GraphToolbox (required; see [GraphToolbox docs](https://eloicampagne.fr/graphtoolbox) for installation)
 - [TiREX](https://github.com/NX-AI/tirex) (for baseline)
+- [Chronos](https://github.com/amazon-science/chronos-forecasting) (for baseline)
 - Usual scientific stack: numpy, pandas, scikit-learn, matplotlib, seaborn
 - (Optional) Jupyter for notebooks
 

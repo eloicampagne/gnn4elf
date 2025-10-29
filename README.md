@@ -18,12 +18,15 @@ gnn4elf
 ├── results_rfrance/                 # saved forecasts (rfrance)  
 ├── results_weave/                   # saved forecasts (weave)  
 ├── .gitignore  
-├── expe.ipynb                   # exploratory notebook with experiments  
-├── optim_ff.py                  # optimization / hyperparam search (feed-forward variant)  
-├── optim.py                     # optimization / hyperparam search  
+├── expe.ipynb                       # exploratory notebook with experiments  
+├── optim_ff.py                      # optimization / hyperparam search (feed-forward variant)  
+├── optim.py                         # optimization / hyperparam search  
 ├── model.py                         # model definitions (FF architecture)  
 ├── multi.py                         # multitask / multi-node helpers  
 ├── README.md  
+├── tirex_expe.ipynb                 # exploratory notebook with TiREX experiments
+├── tirex_util.ipynb                 # TiREX utility functions
+├── tirex-zs-sequence-test.py        # TiREX training script
 ├── train_gpu_ff.py                  # GPU training script (feed-forward experiments)  
 └── train_gpu.py                     # GPU training script
 ````

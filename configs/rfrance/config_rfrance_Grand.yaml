@@ -1,0 +1,6 @@
+begin_train: '2015-01-01'
+begin_test: '2019-01-01'
+end_test: '2020-01-01'
+horizon: 48
+expe_name: fm_region_Grand
+data_path: data/rfrance/Grand.csv

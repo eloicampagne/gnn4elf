@@ -1,0 +1,6 @@
+begin_train: '2024-02-13'
+begin_test: '2024-02-23'
+end_test: '2024-02-26'
+horizon: 48
+expe_name: fm_uk_22
+data_path: data/weave/022.csv

@@ -20,6 +20,15 @@ gnn4elf
 ├── results_tabpfn/                  # saved forecasts (tabpfn)  
 ├── results_tirex/                   # saved forecasts (tirex)  
 ├── results_weave/                   # saved forecasts for weave (gnn)  
+├── scripts/                         # helper scripts
+│   ├── optim_ff.py                  # optimization / hyperparam search (feed-forward variant)
+│   ├── optim.py                     # optimization / hyperparam search
+│   ├── model.py                     # model definitions (FF architecture)
+│   ├── multi.py                     # multitask / multi-node helpers
+│   ├── tirex_util.py                # TiREX utility functions
+│   ├── tirex-zs-sequence-test.py    # TiREX training script
+│   ├── train_gpu_ff.py              # GPU training script (feed-forward experiments)
+│   └── train_gpu.py                 # GPU training script           
 ├── .gitignore  
 ├── expe.ipynb                       # exploratory notebook with experiments  
 ├── optim_ff.py                      # optimization / hyperparam search (feed-forward variant)  
@@ -27,11 +36,7 @@ gnn4elf
 ├── model.py                         # model definitions (FF architecture)  
 ├── multi.py                         # multitask / multi-node helpers  
 ├── README.md  
-├── fm_expe.ipynb                    # exploratory notebook with foundation models experiments
-├── tirex_util.py                    # TiREX utility functions
-├── tirex-zs-sequence-test.py        # TiREX training script
-├── train_gpu_ff.py                  # GPU training script (feed-forward experiments)  
-└── train_gpu.py                     # GPU training script
+└── fm_expe.ipynb                    # exploratory notebook with foundation models experiments
 ````
 
 ## Requirements

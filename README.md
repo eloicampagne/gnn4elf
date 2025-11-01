@@ -15,6 +15,7 @@ gnn4elf
 ├── data/                            # datasets folder  
 ├── graph_representations_rfrance/   # graph representations for rfrance dataset  
 ├── graph_representations_weave/     # graph representations for weave dataset
+├── intepretability/                 # interpretability figures for both datasets
 ├── results_chronos/                 # saved forecasts (chronos)  
 ├── results_rfrance/                 # saved forecasts for rfrance (gnn)  
 ├── results_tabpfn/                  # saved forecasts (tabpfn)  

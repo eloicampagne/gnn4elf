@@ -82,9 +82,10 @@ gnn4elf
 If you use this code in your work, please cite the corresponding [paper](https://arxiv.org/pdf/2507.03690v3):
 
 ```bibtex
-@misc{campagne2025graph,
+@article{campagne2025graph,
     author = {Campagne, Eloi and Amara-Ouali, Yvenn and Goude, Yannig and Kalogeratos, Argyris},
     title = {Graph Neural Networks for Electricity Load Forecasting},
+    journal={arXiv preprint arXiv:2507.03690},
     year = {2025},
 }
 ```

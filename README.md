@@ -79,7 +79,7 @@ gnn4elf
     - Use `expe.ipynb` for exploratory analysis and plotting.
 
 ## Citation
-If you use this code in your work, please cite the corresponding paper:
+If you use this code in your work, please cite the corresponding [paper](https://arxiv.org/pdf/2507.03690v3):
 
 ```bibtex
 @misc{campagne2025graph,

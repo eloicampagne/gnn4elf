@@ -1,0 +1,25 @@
+{
+    "GCNConv": {
+        "adj_matrix": "dtw",
+        "params": {
+            "num_layers": 2,
+            "hidden_channels": 96,
+            "lr": 5e-3,
+            "batch_size": 64,
+            "lam_reg": 0
+        }
+    },
+
+    "APPNP": {
+        "adj_matrix": "precision",
+        "params": {
+            "num_layers": 3,
+            "hidden_channels": 454,
+            "lr": 2e-2,
+            "batch_size": 64,
+            "K": 8,
+            "alpha": 0.85,
+            "lam_reg": 0
+       }
+    }
+}

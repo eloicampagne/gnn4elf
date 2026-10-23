@@ -9,6 +9,18 @@
             "lam_reg": 0
         }
     },
+    "GCN2Conv": {
+        "adj_matrix": "eye",
+        "params": {
+            "num_layers": 2,
+            "hidden_channels": 401,
+            "lr": 0.00047826165264744396,
+            "batch_size": 128,
+            "K": 4,
+            "alpha": 0.12056736158224121,
+            "lam_reg": 0
+        }
+    },
     "GraphSAGE": {
         "adj_matrix": "correlation",
         "params": {
@@ -71,6 +83,47 @@
             "lr": 0.0003,
             "batch_size": 16,
             "K": 1,
+            "lam_reg": 0
+        }
+    },
+    "AGNNConv": {
+        "adj_matrix": "space",
+        "params": {
+            "num_layers": 4,
+            "hidden_channels": 292,
+            "lr": 0.058441148039143645,
+            "batch_size": 32,
+            "lam_reg": 0
+        }
+    },
+    "ARMAConv": {
+        "adj_matrix": "eye",
+        "params": {
+            "num_layers": 4,
+            "hidden_channels": 190,
+            "lr": 0.0016496650968450782,
+            "batch_size": 32,
+            "num_stacks": 1,
+            "lam_reg": 0
+        }
+    },
+    "ResGatedGraphConv": {
+        "adj_matrix": "eye",
+        "params": {
+            "num_layers": 2,
+            "hidden_channels": 498,
+            "lr": 0.0004125034428554397,
+            "batch_size": 32,
+            "lam_reg": 0
+        }
+    },
+    "FiLMConv": {
+        "adj_matrix": "space",
+        "params": {
+            "num_layers": 5,
+            "hidden_channels": 439,
+            "lr": 0.0003494374295245593,
+            "batch_size": 128,
             "lam_reg": 0
         }
     },

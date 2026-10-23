@@ -1,0 +1,95 @@
+{
+ "Shared MLP": {
+  "rmse": 276792.20995225816,
+  "rmse_sd": 10726.098658560099,
+  "mape": 8.225024489597745,
+  "mape_sd": 0.29268062837149944,
+  "n": 10,
+  "cfg": {
+   "hidden_channels": 192,
+   "num_layers": 2,
+   "lr": 0.002,
+   "batch_size": 4
+  }
+ },
+ "Per-node MLP": {
+  "rmse": 329424.7238282233,
+  "rmse_sd": 9938.2604677007,
+  "mape": 9.77805363264888,
+  "mape_sd": 0.2954877289984788,
+  "n": 10,
+  "cfg": {
+   "hidden_channels": 256,
+   "num_layers": 3,
+   "lr": 0.001,
+   "batch_size": 8
+  }
+ },
+ "XGBoost (b-global)": {
+  "rmse": 263387.6643656055,
+  "rmse_sd": 793.8779147803763,
+  "mape": 7.645302484857951,
+  "mape_sd": 0.008213418551003052,
+  "n": 3,
+  "cfg": {
+   "learning_rate": 0.03,
+   "max_depth": 10,
+   "min_child_weight": 6.0,
+   "subsample": 0.85,
+   "colsample_bytree": 0.8,
+   "reg_alpha": 0.01,
+   "reg_lambda": 0.1,
+   "n_estimators": 260
+  }
+ },
+ "XGBoost (b-local)": {
+  "rmse": 288023.25378685864,
+  "rmse_sd": 0.0,
+  "mape": 8.507369457617052,
+  "mape_sd": 0.0,
+  "n": 3,
+  "cfg": {
+   "learning_rate": 0.1,
+   "max_depth": 4,
+   "min_child_weight": 1.0,
+   "subsample": 1.0,
+   "colsample_bytree": 1.0,
+   "n_estimators": 120
+  }
+ },
+ "GAM (b-global)": {
+  "rmse": 223498.69590605938,
+  "mape": 6.268756603154101,
+  "n": 1
+ },
+ "GAM (b-local)": {
+  "rmse": 329432.2611695563,
+  "mape": 10.70427188205229,
+  "n": 1
+ },
+ "Persistence--1 d": {
+  "rmse": 272074.85832809913,
+  "mape": 6.00710312082485,
+  "n": 1
+ },
+ "Persistence--7 d": {
+  "rmse": 283612.43057065166,
+  "mape": 9.416167695760558,
+  "n": 1
+ },
+ "ARIMA": {
+  "rmse": 860605.0485798431,
+  "mape": 18.664812253220926,
+  "n": 1,
+  "order": [
+   4,
+   0,
+   2
+  ]
+ },
+ "Chronos-Bolt": {
+  "rmse": 237449.30108176084,
+  "mape": 6.0165681340820045,
+  "n": 1
+ }
+}

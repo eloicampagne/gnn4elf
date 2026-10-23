@@ -1,0 +1,315 @@
+{
+ "_config": {
+  "epochs": 300,
+  "patience": 75,
+  "seeds": [
+   42,
+   0,
+   1
+  ],
+  "hidden_gnn": 64,
+  "layers": 2
+ },
+ "results": {
+  "eye|ChebConv|42": {
+   "rmse": 1483.9871826171875,
+   "share": 0.0,
+   "params": 33264
+  },
+  "eye|ChebConv|0": {
+   "rmse": 1507.1954345703125,
+   "share": 0.0,
+   "params": 33264
+  },
+  "eye|ChebConv|1": {
+   "rmse": 1446.5706787109375,
+   "share": 0.0,
+   "params": 33264
+  },
+  "eye|SAGEConv|42": {
+   "rmse": 1389.8184814453125,
+   "share": 0.0,
+   "params": 25072
+  },
+  "eye|SAGEConv|0": {
+   "rmse": 1475.44970703125,
+   "share": 0.0,
+   "params": 25072
+  },
+  "eye|SAGEConv|1": {
+   "rmse": 1472.456787109375,
+   "share": 0.0,
+   "params": 25072
+  },
+  "eye|GATv2Conv|42": {
+   "rmse": 1446.9764404296875,
+   "share": 0.0,
+   "params": 25584
+  },
+  "eye|GATv2Conv|0": {
+   "rmse": 1385.5379638671875,
+   "share": 0.0,
+   "params": 25584
+  },
+  "eye|GATv2Conv|1": {
+   "rmse": 1638.6033935546875,
+   "share": 0.0,
+   "params": 25584
+  },
+  "eye|ResGatedGraphConv|42": {
+   "rmse": 1547.4888916015625,
+   "share": 0.0,
+   "params": 42224
+  },
+  "eye|ResGatedGraphConv|0": {
+   "rmse": 1476.2298583984375,
+   "share": 0.0,
+   "params": 42224
+  },
+  "eye|ResGatedGraphConv|1": {
+   "rmse": 1565.38330078125,
+   "share": 0.0,
+   "params": 42224
+  },
+  "space|ChebConv|42": {
+   "rmse": 1178.19873046875,
+   "share": 1.2519242957234382,
+   "params": 33264
+  },
+  "space|ChebConv|0": {
+   "rmse": 1294.346435546875,
+   "share": 1.3829894185066223,
+   "params": 33264
+  },
+  "space|ChebConv|1": {
+   "rmse": 1221.31591796875,
+   "share": 1.355764476954937,
+   "params": 33264
+  },
+  "space|SAGEConv|42": {
+   "rmse": 1421.4921875,
+   "share": 0.14544483702629804,
+   "params": 25072
+  },
+  "space|SAGEConv|0": {
+   "rmse": 1395.2386474609375,
+   "share": 0.171063129324466,
+   "params": 25072
+  },
+  "space|SAGEConv|1": {
+   "rmse": 1436.6964111328125,
+   "share": 0.1330204035155475,
+   "params": 25072
+  },
+  "space|GATv2Conv|42": {
+   "rmse": 1601.978515625,
+   "share": 0.12118216883391142,
+   "params": 25584
+  },
+  "space|GATv2Conv|0": {
+   "rmse": 1568.46533203125,
+   "share": 0.11289255488663912,
+   "params": 25584
+  },
+  "space|GATv2Conv|1": {
+   "rmse": 1503.767333984375,
+   "share": 0.09247726732864976,
+   "params": 25584
+  },
+  "space|ResGatedGraphConv|42": {
+   "rmse": 1302.4559326171875,
+   "share": 0.8105438768863678,
+   "params": 42224
+  },
+  "space|ResGatedGraphConv|0": {
+   "rmse": 1129.1956787109375,
+   "share": 0.8246482521295547,
+   "params": 42224
+  },
+  "space|ResGatedGraphConv|1": {
+   "rmse": 1158.43994140625,
+   "share": 0.7959360763430595,
+   "params": 42224
+  },
+  "gaussian|ChebConv|42": {
+   "rmse": 1192.8814697265625,
+   "share": 1.2231330573558807,
+   "params": 33264
+  },
+  "gaussian|ChebConv|0": {
+   "rmse": 1253.7130126953125,
+   "share": 1.3268159657716752,
+   "params": 33264
+  },
+  "gaussian|ChebConv|1": {
+   "rmse": 1140.7999267578125,
+   "share": 1.201210343837738,
+   "params": 33264
+  },
+  "gaussian|SAGEConv|42": {
+   "rmse": 1259.176513671875,
+   "share": 0.1205485999584198,
+   "params": 25072
+  },
+  "gaussian|SAGEConv|0": {
+   "rmse": 1292.7833251953125,
+   "share": 0.1480140213854611,
+   "params": 25072
+  },
+  "gaussian|SAGEConv|1": {
+   "rmse": 1330.4285888671875,
+   "share": 0.12675948888063432,
+   "params": 25072
+  },
+  "gaussian|GATv2Conv|42": {
+   "rmse": 1382.1376953125,
+   "share": 0.13538858583196997,
+   "params": 25584
+  },
+  "gaussian|GATv2Conv|0": {
+   "rmse": 1356.048095703125,
+   "share": 0.11329084048047662,
+   "params": 25584
+  },
+  "gaussian|GATv2Conv|1": {
+   "rmse": 1298.4163818359375,
+   "share": 0.14246814027428628,
+   "params": 25584
+  },
+  "gaussian|ResGatedGraphConv|42": {
+   "rmse": 1287.3475341796875,
+   "share": 0.860679441690445,
+   "params": 42224
+  },
+  "gaussian|ResGatedGraphConv|0": {
+   "rmse": 1194.3887939453125,
+   "share": 0.8469619244337082,
+   "params": 42224
+  },
+  "gaussian|ResGatedGraphConv|1": {
+   "rmse": 1289.435546875,
+   "share": 0.8077448382973671,
+   "params": 42224
+  },
+  "dtw|ChebConv|42": {
+   "rmse": 1259.2127685546875,
+   "share": 1.433967287838459,
+   "params": 33264
+  },
+  "dtw|ChebConv|0": {
+   "rmse": 1400.7884521484375,
+   "share": 1.8208321288228035,
+   "params": 33264
+  },
+  "dtw|ChebConv|1": {
+   "rmse": 1192.1463623046875,
+   "share": 1.5547521516680718,
+   "params": 33264
+  },
+  "dtw|SAGEConv|42": {
+   "rmse": 1240.4132080078125,
+   "share": 0.1162520763464272,
+   "params": 25072
+  },
+  "dtw|SAGEConv|0": {
+   "rmse": 1343.002197265625,
+   "share": 0.13968328973278404,
+   "params": 25072
+  },
+  "dtw|SAGEConv|1": {
+   "rmse": 1344.615966796875,
+   "share": 0.1315965467132628,
+   "params": 25072
+  },
+  "dtw|GATv2Conv|42": {
+   "rmse": 1387.1573486328125,
+   "share": 0.10891516655683517,
+   "params": 25584
+  },
+  "dtw|GATv2Conv|0": {
+   "rmse": 1330.817626953125,
+   "share": 0.1437460444867611,
+   "params": 25584
+  },
+  "dtw|GATv2Conv|1": {
+   "rmse": 1350.720458984375,
+   "share": 0.11446991134434939,
+   "params": 25584
+  },
+  "dtw|ResGatedGraphConv|42": {
+   "rmse": 1274.397216796875,
+   "share": 0.8789723813533783,
+   "params": 42224
+  },
+  "dtw|ResGatedGraphConv|0": {
+   "rmse": 1332.302978515625,
+   "share": 0.8398891463875771,
+   "params": 42224
+  },
+  "dtw|ResGatedGraphConv|1": {
+   "rmse": 1366.9302978515625,
+   "share": 0.8365084782242775,
+   "params": 42224
+  },
+  "learned|ChebConv|42": {
+   "rmse": 1234.8475341796875,
+   "share": 0.9445156484842301,
+   "params": 33264
+  },
+  "learned|ChebConv|0": {
+   "rmse": 1285.122314453125,
+   "share": 0.954567314684391,
+   "params": 33264
+  },
+  "learned|ChebConv|1": {
+   "rmse": 1266.1905517578125,
+   "share": 0.9086118742823601,
+   "params": 33264
+  },
+  "learned|SAGEConv|42": {
+   "rmse": 1383.916748046875,
+   "share": 0.15578482318669556,
+   "params": 25072
+  },
+  "learned|SAGEConv|0": {
+   "rmse": 1414.4559326171875,
+   "share": 0.19558984488248826,
+   "params": 25072
+  },
+  "learned|SAGEConv|1": {
+   "rmse": 1320.6195068359375,
+   "share": 0.18805642556399108,
+   "params": 25072
+  },
+  "learned|GATv2Conv|42": {
+   "rmse": 1431.3536376953125,
+   "share": 0.15420271512120962,
+   "params": 25584
+  },
+  "learned|GATv2Conv|0": {
+   "rmse": 1475.9771728515625,
+   "share": 0.1692785255610943,
+   "params": 25584
+  },
+  "learned|GATv2Conv|1": {
+   "rmse": 1423.1988525390625,
+   "share": 0.14601731337606907,
+   "params": 25584
+  },
+  "learned|ResGatedGraphConv|42": {
+   "rmse": 1255.920166015625,
+   "share": 0.9016794890165329,
+   "params": 42224
+  },
+  "learned|ResGatedGraphConv|0": {
+   "rmse": 1205.21484375,
+   "share": 0.8855191096663475,
+   "params": 42224
+  },
+  "learned|ResGatedGraphConv|1": {
+   "rmse": 1352.334716796875,
+   "share": 0.9769769862294198,
+   "params": 42224
+  }
+ }
+}

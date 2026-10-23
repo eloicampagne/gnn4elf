@@ -1,95 +1,83 @@
 # gnn4elf
 
-Graph neural network code and forecasts accompanying the paper "Graph Neural Networks for Electricity Load Forecasting" (gnn4elf). This repository implements training and evaluation pipelines built on top of the [GraphToolbox package](https://github.com/eloicampagne/graphtoolbox).
+Code for the paper *A Diagnostic Protocol for GNNs in Electricity Load Forecasting: Separating Parameter Sharing from Neighborhood Access* (Campagne, Amara-Ouali, Goude, Zehavi, and Kalogeratos), [arXiv:2507.03690](https://arxiv.org/abs/2507.03690).
 
-## Highlights
-- Implements models and training scripts used in the paper.
-- Reproducible experiments and saved forecasts.
-- Uses GraphToolbox for graph construction and utilities.
+A GNN that forecasts a collection of load series shares parameters across series and reads neighboring series. The protocol of the paper separates the two mechanisms by comparing the GNN with a per-node network, a network shared across nodes without neighbors, and the same GNN without edges, and it tests neighbor identity by degree-preserving rewiring. The models, graph constructions and training loops come from [GraphToolbox](https://github.com/eloicampagne/graphtoolbox) (Campagne et al., ICTAI 2026, [arXiv:2609.24609](https://arxiv.org/abs/2609.24609)); this repository holds the experiment scripts, their configurations and the summaries behind the tables of the paper.
 
-## Repository structure
+## Installation
 
-```python
-gnn4elf
-├── configs/                         # experiment configuration files  
-├── data/                            # datasets folder  
-├── graph_representations_rfrance/   # graph representations for rfrance dataset  
-├── graph_representations_weave/     # graph representations for weave dataset
-├── intepretability/                 # interpretability figures for both datasets
-├── results_chronos/                 # saved forecasts (chronos)  
-├── results_rfrance/                 # saved forecasts for rfrance (gnn)  
-├── results_tabpfn/                  # saved forecasts (tabpfn)  
-├── results_tirex/                   # saved forecasts (tirex)  
-├── results_weave/                   # saved forecasts for weave (gnn)  
-├── scripts/                         # helper scripts
-│   ├── optim_ff.py                  # optimization / hyperparam search (feed-forward variant)
-│   ├── optim.py                     # optimization / hyperparam search
-│   ├── model.py                     # model definitions (FF architecture)
-│   ├── multi.py                     # multitask / multi-node helpers
-│   ├── tirex_util.py                # TiREX utility functions
-│   ├── tirex-zs-sequence-test.py    # TiREX training script
-│   ├── train_gpu_ff.py              # GPU training script (feed-forward experiments)
-│   └── train_gpu.py                 # GPU training script           
-├── .gitignore  
-├── expe.ipynb                       # exploratory notebook with experiments  
-├── optim_ff.py                      # optimization / hyperparam search (feed-forward variant)  
-├── optim.py                         # optimization / hyperparam search  
-├── model.py                         # model definitions (FF architecture)  
-├── multi.py                         # multitask / multi-node helpers  
-├── README.md  
-└── fm_expe.ipynb                    # exploratory notebook with foundation models experiments
-````
+```sh
+git clone https://github.com/eloicampagne/gnn4elf.git
+cd gnn4elf
+pip install -r requirements.txt
+```
 
-## Requirements
-- Python 3.9+
-- PyTorch
-- GraphToolbox (required; see [GraphToolbox docs](https://eloicampagne.fr/graphtoolbox) for installation)
-- [TiREX](https://github.com/NX-AI/tirex) (for baseline)
-- [Chronos](https://github.com/amazon-science/chronos-forecasting) (for baseline)
-- Usual scientific stack: numpy, pandas, scikit-learn, matplotlib, seaborn
-- (Optional) Jupyter for notebooks
+The learned-adjacency control (`experiments/decomposition/learned_adjacency.py`) also needs the MTGNN code:
 
-## Quick start
-1. Prepare data
-    - Download the datasets from [Zenodo](https://zenodo.org/records/17453409?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjJkMzEwODAzLWM2NDMtNDljZi05MTA1LTA3Mjk1NWQ5YmRhMCIsImRhdGEiOnt9LCJyYW5kb20iOiIzN2RjMjZiNDhiNzc5YzQ3NzQ5NTQ5ZDZmN2E0YTc3ZCJ9.WIfAN3nX9wRLfaAQim_BfQmiqiPkwKRKGr-lF2m2cOJM0d0O8rofN76WmcMCE6Pq-ushBaoIB2yZN_C3uKsxWQ).
-    - Place dataset files under `data/` following the preprocessing expected by the scripts.
-    - Put graph representations in the matching folders: `graph_representations_weave/` and `graph_representations_rfrance/`.
+```sh
+git clone https://github.com/nnzhan/MTGNN external/MTGNN
+```
 
-2. Hyperparameter search / optimization:
-    ```bash
-    python optim.py 
-    python optim_ff.py
-    ```
+The foundation-model baselines `t0_baseline.py` and `timestral_baseline.py` need their own packages (`t0`, `timestral`) and are not covered by `requirements.txt`.
 
-3. Configure an experiment
-    - Edit or add a config file in `configs/` (the code reads configuration dictionaries; check existing examples).
+## Data
 
-4. Run training on GPU:
-    ```bash
-    # standard training
-    python train_gpu.py --data_number $SLURM_ARRAY_TASK_ID --config configs/your_config.json
+The processed REGIONS-FR and WEAVE-UK datasets and the synthetic benchmarks are on Zenodo, [doi:10.5281/zenodo.21977576](https://doi.org/10.5281/zenodo.21977576). The ELECTRICITY collection is the one distributed with Informer (Zhou et al., 2021). [`data/README.md`](data/README.md) gives the expected file layout.
 
-    # feed-forward variant
-    python train_gpu_ff.py --data_number $SLURM_ARRAY_TASK_ID --config configs/your_ff_config.json
-    ```
-    Note that the python functions were designed to be run on HPC with SLURM.
+## Layout
 
-5. Inspect results
-    - Results and forecasts are saved in `results_rfrance/` or `results_weave/` depending on dataset.
-    - Use `expe.ipynb` for exploratory analysis and plotting.
+```
+configs/                    hyperparameters selected by the benchmark searches
+experiments/
+  _paths.py                 repository paths; puts every experiment folder on sys.path
+  data_prep/                caches of the per-node tasks (data/cache/)
+  benchmark/                tuned architecture benchmark and covariate-aware baselines
+  french_regime/            four node-wise models on REGIONS-FR as the training set contracts
+  synthetic/                controlled denoising study
+  decomposition/            sharing/neighborhood decomposition on WEAVE-UK and ELECTRICITY, and its controls
+  aggregation/              experts for the online aggregation
+  interpretability/         latent representations and explanation graphs
+figures/                    scripts of the figures of the paper (written to figures/out/)
+graph_representations_*/    adjacency matrices of the candidate graphs
+results_*/                  JSON summaries read by the tables; raw forecasts and checkpoints are not versioned
+legacy/                     pipeline of arXiv:2507.03690v3 (28 WEAVE substations)
+```
+
+Scripts resolve every path from the repository root, so they can be launched from any directory, for instance `python experiments/decomposition/eval_metrics.py`.
+
+## Correspondence with the paper
+
+| Paper | Scripts |
+|---|---|
+| Section 6.1, Tables 2 and 3, Table H.1 (hyperparameters) | `benchmark/benchmark_rfrance.py`, `benchmark/benchmark_weave500.py` (driven by `run_rfrance.sh`, `run_bench500.sh`), `benchmark/extra_baselines.py` (ARIMA-X, Chronos-2) |
+| Section 6.2, Figure 2, Tables C.1 and C.2, Figure C.3 | `french_regime/ib_lib.py`, `french_regime/expe_inductive_bias.ipynb`, `french_regime/french_nrmse.py` |
+| Section 6.3, Figure 3 | `synthetic/synth_gnn.py`, `synthetic/synth_sweep.py` |
+| Section 6.4, Table 4, Figure 4 | `decomposition/eval_metrics.py`, `decomposition/weave_nodes_metrics.py`, `decomposition/ltsf_nodes.py`, `decomposition/increment_intervals.py` |
+| Appendix E, Table E.1 (node count) | `decomposition/weave_nodes_metrics.py`, `decomposition/ltsf_nodes.py` |
+| Appendix F, Tables F.1 to F.4 (controls) | `rewire_test.py` and `extra_controls.py` (rewiring, graph estimated inside the window), `local_references.py` and `seed_node_intervals.py` (ridge and persistence references), `review_controls.py` (MLP square, other periods), `width_replication.py`, `homophily.py`, `unshared_graph.py`, `recurrent_baseline.py` (GRU), `learned_adjacency.py` (MTGNN), all in `decomposition/` |
+| Section 6.5, Appendix B | `aggregation/aggreg_experts.py`, `aggregation/add_expert.py`, `aggregation/gam_expert.py`, `aggregation/try_convs.py` |
+| Appendix G (representations) | `interpretability/extract_weave_latents.py`, `interpretability/interpretability.ipynb`, `interpretability/expe_interpretability.ipynb`; the REGIONS-FR latents come from GraphToolbox, `examples/load/compare_latent_representations.py` |
+
+Table and figure numbers follow the preprint. `t0_baseline.py`, `timestral_baseline.py`, `fm_diagnostics.py` and `fm_residual_correction.py` add foundation-model baselines that the current version of the paper does not report.
 
 ## Citation
-If you use this code in your work, please cite the corresponding [paper](https://arxiv.org/pdf/2507.03690v3):
 
 ```bibtex
 @article{campagne2025graph,
-    author = {Campagne, Eloi and Amara-Ouali, Yvenn and Goude, Yannig and Kalogeratos, Argyris},
-    title = {Graph Neural Networks for Electricity Load Forecasting},
-    journal={arXiv preprint arXiv:2507.03690},
-    year = {2025},
+  author  = {Campagne, Eloi and Amara-Ouali, Yvenn and Goude, Yannig and Zehavi, Itai and Kalogeratos, Argyris},
+  title   = {A Diagnostic Protocol for {GNNs} in Electricity Load Forecasting: Separating Parameter Sharing from Neighborhood Access},
+  journal = {arXiv preprint arXiv:2507.03690},
+  year    = {2025}
+}
+
+@inproceedings{campagne2026graphtoolbox,
+  author    = {Campagne, Eloi and Amara-Ouali, Yvenn and Goude, Yannig and Kalogeratos, Argyris},
+  title     = {{GraphToolbox}: A Configurable {Python} Framework for Graph Neural Network Forecasting},
+  booktitle = {IEEE International Conference on Tools with Artificial Intelligence (ICTAI)},
+  year      = {2026}
 }
 ```
 
-## Contact
-- For questions, open an issue in the repository or contact the authors listed in the paper.
+## License
 
+GPL-3.0, see [LICENSE](LICENSE).

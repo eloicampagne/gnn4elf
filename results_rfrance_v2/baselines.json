@@ -1,0 +1,63 @@
+{
+ "Shared MLP": {
+  "rmse": 937.2954135986535,
+  "rmse_sd": 24.75292273871942,
+  "mape": 1.2834696081138968,
+  "mape_sd": 0.05458126891211312,
+  "n": 10,
+  "cfg": {
+   "num_layers": 3,
+   "hidden_channels": 216,
+   "lr": 0.0029942296170394956,
+   "batch_size": 8
+  },
+  "n_trials": 40
+ },
+ "Per-node MLP": {
+  "rmse": 921.878440576145,
+  "rmse_sd": 9.613171712714935,
+  "mape": 1.2448334175721931,
+  "mape_sd": 0.021679214448363435,
+  "n": 10,
+  "cfg": {
+   "num_layers": 3,
+   "hidden_channels": 143,
+   "lr": 0.0006343101283603374,
+   "batch_size": 8
+  },
+  "n_trials": 40
+ },
+ "XGBoost (b-global)": {
+  "rmse": 859.0930711036603,
+  "rmse_sd": 0.3476823754819936,
+  "mape": 1.1588982224583686,
+  "mape_sd": 0.0010839056495655797,
+  "n": 3,
+  "cfg": {
+   "learning_rate": 0.0462081840404215,
+   "max_depth": 8,
+   "min_child_weight": 4.376259219903314,
+   "subsample": 0.6979008314244042,
+   "colsample_bytree": 0.9340419600145996,
+   "reg_alpha": 0.12782872408566368,
+   "reg_lambda": 0.23707098591565923,
+   "n_estimators": 331
+  },
+  "n_trials": 40
+ },
+ "XGBoost (b-local)": {
+  "rmse": 912.7273286878421,
+  "rmse_sd": 0.0,
+  "mape": 1.2010864936322048,
+  "mape_sd": 0.0,
+  "n": 3,
+  "cfg": {
+   "learning_rate": 0.1,
+   "max_depth": 4,
+   "min_child_weight": 1.0,
+   "subsample": 1.0,
+   "colsample_bytree": 1.0,
+   "n_estimators": 120
+  }
+ }
+}

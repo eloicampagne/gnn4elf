@@ -1,0 +1,402 @@
+[
+ {
+  "adj_matrix": "correlation",
+  "num_layers": 1,
+  "hidden_channels": 194,
+  "lr": 0.0015930522616241021,
+  "batch_size": 32,
+  "K": 1,
+  "val_rmse": 967.7534790039062,
+  "seconds": 157.96439409255981
+ },
+ {
+  "adj_matrix": "distsplines",
+  "num_layers": 1,
+  "hidden_channels": 68,
+  "lr": 0.000816845589476017,
+  "batch_size": 8,
+  "K": 3,
+  "val_rmse": 988.8150024414062,
+  "seconds": 332.10359597206116
+ },
+ {
+  "adj_matrix": "dtw",
+  "num_layers": 3,
+  "hidden_channels": 79,
+  "lr": 0.00017541893487450815,
+  "batch_size": 32,
+  "K": 2,
+  "val_rmse": 1079.5584716796875,
+  "seconds": 160.32383704185486
+ },
+ {
+  "adj_matrix": "dtw",
+  "num_layers": 2,
+  "hidden_channels": 218,
+  "lr": 0.00015030900645056822,
+  "batch_size": 32,
+  "K": 3,
+  "val_rmse": 1026.3221435546875,
+  "seconds": 155.82186698913574
+ },
+ {
+  "adj_matrix": "gl3sr",
+  "num_layers": 3,
+  "hidden_channels": 48,
+  "lr": 0.00010257563974185662,
+  "batch_size": 8,
+  "K": 1,
+  "val_rmse": 1034.136962890625,
+  "seconds": 545.1795878410339
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 120,
+  "lr": 0.0059487468132197715,
+  "batch_size": 32,
+  "K": 3,
+  "val_rmse": 979.4719848632812,
+  "seconds": 176.85460782051086
+ },
+ {
+  "adj_matrix": "gl3sr",
+  "num_layers": 1,
+  "hidden_channels": 92,
+  "lr": 0.006533305220227739,
+  "batch_size": 32,
+  "K": 3,
+  "val_rmse": 1044.826904296875,
+  "seconds": 113.12593102455139
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 98,
+  "lr": 0.004119839624605189,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 888.3692626953125,
+  "seconds": 1323.7095248699188
+ },
+ {
+  "adj_matrix": "correlation",
+  "num_layers": 3,
+  "hidden_channels": 62,
+  "lr": 0.0010903884523201113,
+  "batch_size": 32,
+  "K": 1,
+  "val_rmse": 991.3165893554688,
+  "seconds": 98.82748889923096
+ },
+ {
+  "adj_matrix": "dtw",
+  "num_layers": 3,
+  "hidden_channels": 52,
+  "lr": 0.00019489008462344248,
+  "batch_size": 16,
+  "K": 2,
+  "val_rmse": 988.2733764648438,
+  "seconds": 180.55242776870728
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 2,
+  "hidden_channels": 32,
+  "lr": 0.0026200667497819755,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 995.3617553710938,
+  "seconds": 414.84777307510376
+ },
+ {
+  "adj_matrix": "precision",
+  "num_layers": 1,
+  "hidden_channels": 195,
+  "lr": 0.0019383199835819537,
+  "batch_size": 16,
+  "K": 4,
+  "val_rmse": 931.369384765625,
+  "seconds": 157.7085738182068
+ },
+ {
+  "adj_matrix": "precision",
+  "num_layers": 2,
+  "hidden_channels": 159,
+  "lr": 0.00323067461734994,
+  "batch_size": 16,
+  "K": 4,
+  "val_rmse": 959.4470825195312,
+  "seconds": 291.78663301467896
+ },
+ {
+  "adj_matrix": "precision",
+  "num_layers": 1,
+  "hidden_channels": 129,
+  "lr": 0.0004913460742665327,
+  "batch_size": 16,
+  "K": 4,
+  "val_rmse": 971.9439086914062,
+  "seconds": 184.75791430473328
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 2,
+  "hidden_channels": 244,
+  "lr": 0.00981822687818912,
+  "batch_size": 16,
+  "K": 4,
+  "val_rmse": 977.9056396484375,
+  "seconds": 210.8015842437744
+ },
+ {
+  "adj_matrix": "precision",
+  "num_layers": 2,
+  "hidden_channels": 107,
+  "lr": 0.0027513835080663494,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 950.0165405273438,
+  "seconds": 378.2820830345154
+ },
+ {
+  "adj_matrix": "distsplines",
+  "num_layers": 1,
+  "hidden_channels": 160,
+  "lr": 0.000526603865173352,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 910.62939453125,
+  "seconds": 287.7753269672394
+ },
+ {
+  "adj_matrix": "distsplines",
+  "num_layers": 2,
+  "hidden_channels": 149,
+  "lr": 0.0005887056496896425,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 950.7611694335938,
+  "seconds": 398.3751928806305
+ },
+ {
+  "adj_matrix": "distsplines",
+  "num_layers": 2,
+  "hidden_channels": 95,
+  "lr": 0.00032495925684967157,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 960.3270874023438,
+  "seconds": 392.4188721179962
+ },
+ {
+  "adj_matrix": "distsplines",
+  "num_layers": 3,
+  "hidden_channels": 159,
+  "lr": 0.000324706605887814,
+  "batch_size": 8,
+  "K": 2,
+  "val_rmse": 920.144287109375,
+  "seconds": 516.5998389720917
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 1,
+  "hidden_channels": 127,
+  "lr": 0.001047140730774299,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 935.7229614257812,
+  "seconds": 287.7095730304718
+ },
+ {
+  "adj_matrix": "distsplines",
+  "num_layers": 3,
+  "hidden_channels": 167,
+  "lr": 0.00034540247762943635,
+  "batch_size": 8,
+  "K": 2,
+  "val_rmse": 924.9947509765625,
+  "seconds": 902.6390452384949
+ },
+ {
+  "adj_matrix": "distsplines",
+  "num_layers": 3,
+  "hidden_channels": 147,
+  "lr": 0.0003392274429419277,
+  "batch_size": 8,
+  "K": 2,
+  "val_rmse": 924.7583618164062,
+  "seconds": 498.300742149353
+ },
+ {
+  "adj_matrix": "distsplines",
+  "num_layers": 3,
+  "hidden_channels": 183,
+  "lr": 0.0006083396042523487,
+  "batch_size": 8,
+  "K": 2,
+  "val_rmse": 930.4414672851562,
+  "seconds": 763.0921359062195
+ },
+ {
+  "adj_matrix": "distsplines",
+  "num_layers": 3,
+  "hidden_channels": 251,
+  "lr": 0.0002560742873284924,
+  "batch_size": 8,
+  "K": 2,
+  "val_rmse": 900.9619750976562,
+  "seconds": 567.9305229187012
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 254,
+  "lr": 0.000213891663157389,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 893.911865234375,
+  "seconds": 512.0516839027405
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 253,
+  "lr": 0.00010015439476368951,
+  "batch_size": 8,
+  "K": 2,
+  "val_rmse": 922.2693481445312,
+  "seconds": 528.3400540351868
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 220,
+  "lr": 0.00023786317204626653,
+  "batch_size": 8,
+  "K": 1,
+  "val_rmse": 935.8460693359375,
+  "seconds": 515.1371719837189
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 36,
+  "lr": 0.004295116271261732,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 890.9107666015625,
+  "seconds": 1324.8491840362549
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 36,
+  "lr": 0.004091143409822802,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 933.5355224609375,
+  "seconds": 487.0993092060089
+ },
+ {
+  "adj_matrix": "correlation",
+  "num_layers": 3,
+  "hidden_channels": 40,
+  "lr": 0.001595853155791398,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 956.8401489257812,
+  "seconds": 496.47112488746643
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 205,
+  "lr": 0.005371533008043455,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 897.9776000976562,
+  "seconds": 609.0892930030823
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 62,
+  "lr": 0.0051213250608525065,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 929.2324829101562,
+  "seconds": 798.4667840003967
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 82,
+  "lr": 0.009250322093154285,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 982.8543701171875,
+  "seconds": 437.0651981830597
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 211,
+  "lr": 0.004232226579545718,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 909.1409912109375,
+  "seconds": 551.8905992507935
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 3,
+  "hidden_channels": 50,
+  "lr": 0.0020240012252285377,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 911.9036254882812,
+  "seconds": 432.21838903427124
+ },
+ {
+  "adj_matrix": "space",
+  "num_layers": 2,
+  "hidden_channels": 79,
+  "lr": 0.006849908595970815,
+  "batch_size": 32,
+  "K": 3,
+  "val_rmse": 1044.5081787109375,
+  "seconds": 388.91902804374695
+ },
+ {
+  "adj_matrix": "gl3sr",
+  "num_layers": 3,
+  "hidden_channels": 43,
+  "lr": 0.003604960251763884,
+  "batch_size": 8,
+  "K": 1,
+  "val_rmse": 981.389404296875,
+  "seconds": 399.72789311408997
+ },
+ {
+  "adj_matrix": "dtw",
+  "num_layers": 3,
+  "hidden_channels": 70,
+  "lr": 0.00536482604325228,
+  "batch_size": 32,
+  "K": 3,
+  "val_rmse": 1015.301025390625,
+  "seconds": 134.08157110214233
+ },
+ {
+  "adj_matrix": "correlation",
+  "num_layers": 3,
+  "hidden_channels": 106,
+  "lr": 0.00763282631366127,
+  "batch_size": 8,
+  "K": 4,
+  "val_rmse": 973.1890869140625,
+  "seconds": 422.35083389282227
+ }
+]

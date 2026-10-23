@@ -1,0 +1,22 @@
+{
+ "Shared MLP": {
+  "params": {
+   "num_layers": 3,
+   "hidden_channels": 216,
+   "lr": 0.0029942296170394956,
+   "batch_size": 8
+  },
+  "val_rmse": 903.1162718277692,
+  "n_trials": 40
+ },
+ "Per-node MLP": {
+  "params": {
+   "num_layers": 3,
+   "hidden_channels": 143,
+   "lr": 0.0006343101283603374,
+   "batch_size": 8
+  },
+  "val_rmse": 851.5211905678336,
+  "n_trials": 40
+ }
+}

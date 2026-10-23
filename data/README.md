@@ -1,29 +1,22 @@
-# Data directory — Instructions
+# Data
 
-This README explains how to place the data files expected by the project.
+`data/` is not versioned. The scripts expect the following files, all paths relative to the repository root.
 
-This project accompanies the paper "Graph Neural Networks for Electricity Load Forecasting" and is intended to reproduce the data setup used in that work. It also integrates with the GraphToolbox package developed by the project author, which provides the graph utilities and modeling components used in the experiments. Please cite the paper and reference the GraphToolbox repository when reusing these datasets or scripts.
+```
+data/
+  rfrance/train2.csv, test2.csv              REGIONS-FR, 12 regions, 2015-2019 (Zenodo)
+  weave/train_weave_500.csv, test_weave_500.csv
+                                             WEAVE-UK, 500 feeders, 14-28 February 2024 (Zenodo)
+  electricity/electricity.csv                ELECTRICITY, 321 clients, hourly (Informer distribution)
+  cache/rfrance_tasks.npz, weave500_tasks.npz
+                                             per-node tasks, built by experiments/data_prep/
+```
 
-## Location
-Place your data files in:
-`gnn4elf/data`
+REGIONS-FR and WEAVE-UK are deposited on Zenodo, [doi:10.5281/zenodo.21977576](https://doi.org/10.5281/zenodo.21977576). The caches are built from them:
 
-You can also reference this folder by its relative path from the project root: `./data/`.
+```sh
+python experiments/data_prep/build_cache.py         # data/cache/rfrance_tasks.npz
+python experiments/data_prep/build_weave_cache.py   # data/cache/weave500_tasks.npz
+```
 
-## Accepted formats
-Common supported formats: `.csv` and `.parquet`.
-
-## Recommended structure
-- data/
-    - weave/        -> UK dataset
-        - train_weave.csv   -> training data (split)
-        - test_weave.csv    -> test data (split)
-    - rfrance/      -> French regions dataset
-        - train2.csv   -> training data (split)
-        - test2.csv    -> test data (split)
-    - README.md      -> this file
-
-## Best practices
-- Do not commit large data files to Git: add them to `.gitignore`.
-- If files are large, use external storage (S3, Drive, LFS).
-- Ensure read permissions are set: `chmod 644 data/*` if needed.
+`legacy/` reads the earlier 28-substation files `weave/train_weave_28.csv` and `weave/test_weave_28.csv`; its notebooks resolve `./data/` from the repository root.

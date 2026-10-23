@@ -1,0 +1,40 @@
+{
+ "REGIONS-FR (national, MW)": {
+  "ARIMA-X (design D, selected on 2018)": [
+   1332.7,
+   1.77
+  ],
+  "ARIMA-X (design A, linear weather)": [
+   1870.6,
+   2.64
+  ],
+  "Chronos-2 (national, covariates)": [
+   1766.7,
+   1.94
+  ],
+  "Chronos-2 (multivariate, 12 regions)": [
+   1769.5,
+   1.95
+  ],
+  "Chronos-2 (bottom-up)": "stopped, side information only"
+ },
+ "WEAVE-UK (summed, kWh)": {
+  "Chronos-2 (aggregate, calendar covariates)": [
+   170.2,
+   3.76
+  ],
+  "Chronos-2 (multivariate, 500 feeders)": [
+   198.3,
+   4.57
+  ],
+  "Chronos-2 (bottom-up)": [
+   224.9,
+   5.49
+  ],
+  "ARIMA-X (aggregate, Fourier K=6 + weekend, order (3,1,2), selected on 23-24 Feb)": [
+   237.9,
+   5.9
+  ]
+ },
+ "note": "Values from rfrance.log, arimax_select.log, rfrance_multi.log, weave.json, weave_multivariate.json; [RMSE, MAPE %]. rfrance() was stopped during the bottom-up Chronos-2 run, so its predictions were not saved."
+}

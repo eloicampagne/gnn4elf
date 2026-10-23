@@ -1,4 +1,46 @@
-__pycache__
-*.csv
+# Python and editors
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.vscode/
 .DS_Store
-checkpoints
+catboost_info/
+
+# Data, caches and third-party code (see data/README.md and README.md)
+data/*
+!data/README.md
+external/
+*.csv
+*.lock
+
+# Trained models and raw forecasts: kept locally, not versioned
+checkpoints*/
+attention_matrix/
+*.pt
+*.pth
+*.npz
+*.png
+!legacy/interpretability/**/*.png
+!figures/data/*.npz
+
+# Results: only the JSON summaries behind the tables of the paper are versioned
+results_*/**
+!results_*/
+!results_*/*.json
+results_*/*.pre-*.json
+figures/out/
+
+# Local only
+archive/
+paper/
+*.log
+# JSON of exploratory analyses not reported in the paper (scripts kept in archive/)
+results_ltsf_nodes/budget_sweep.json
+results_ltsf_nodes/edge_mechanism*.json
+results_ltsf_nodes/graph_shape.json
+results_ltsf_nodes/k_sweep.json
+results_inductive_bias/armsconvs_val.json
+results_inductive_bias/curve_bestconv_nolag.json
+results_inductive_bias/gridval_nolag.json
+results_synth_aggr/

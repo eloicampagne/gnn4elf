@@ -1,0 +1,35 @@
+{
+ "_config": {
+  "epochs": 300,
+  "patience": 75,
+  "seeds": [
+   42,
+   0,
+   1
+  ],
+  "hidden_gnn": 64,
+  "layers": 2
+ },
+ "results": [
+  {
+   "convolution": "ChebConv",
+   "part naive (aretes vides)": 0.0,
+   "part corrigee (boucles seules)": 0.0
+  },
+  {
+   "convolution": "SAGEConv",
+   "part naive (aretes vides)": 0.7304,
+   "part corrigee (boucles seules)": 0.0
+  },
+  {
+   "convolution": "GATv2Conv",
+   "part naive (aretes vides)": 0.0,
+   "part corrigee (boucles seules)": 0.0
+  },
+  {
+   "convolution": "ResGatedGraphConv",
+   "part naive (aretes vides)": 0.4763,
+   "part corrigee (boucles seules)": 0.0
+  }
+ ]
+}

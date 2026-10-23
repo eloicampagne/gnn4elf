@@ -1,0 +1,97 @@
+{
+  "GCNConv": {
+    "adj_matrix": "correlation",
+    "params": {
+      "num_layers": 1,
+      "hidden_channels": 86,
+      "lr": 0.0025791565678015345,
+      "batch_size": 2
+    },
+    "val_rmse": 155708.5625,
+    "n_trials": 40
+  },
+  "GraphSAGE": {
+    "adj_matrix": "correlation",
+    "params": {
+      "num_layers": 1,
+      "hidden_channels": 126,
+      "lr": 0.007139796923487935,
+      "batch_size": 2
+    },
+    "val_rmse": 155117.453125,
+    "n_trials": 40
+  },
+  "GATConv": {
+    "adj_matrix": "precision",
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 76,
+      "lr": 0.00381655562486352,
+      "batch_size": 2,
+      "heads": 4
+    },
+    "val_rmse": 148914.09375,
+    "n_trials": 40
+  },
+  "GATv2Conv": {
+    "adj_matrix": "precision",
+    "params": {
+      "num_layers": 1,
+      "hidden_channels": 102,
+      "lr": 0.008725720825842834,
+      "batch_size": 2,
+      "heads": 2
+    },
+    "val_rmse": 139286.078125,
+    "n_trials": 40
+  },
+  "TransformerConv": {
+    "adj_matrix": "dtw",
+    "params": {
+      "num_layers": 2,
+      "hidden_channels": 115,
+      "lr": 0.0011976188548993032,
+      "batch_size": 4,
+      "heads": 1
+    },
+    "val_rmse": 134396.609375,
+    "n_trials": 40
+  },
+  "TAGConv": {
+    "adj_matrix": "precision",
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 123,
+      "lr": 0.0012920976158905578,
+      "batch_size": 2,
+      "K": 2
+    },
+    "val_rmse": 152431.640625,
+    "n_trials": 40
+  },
+  "ChebConv": {
+    "adj_matrix": "precision",
+    "params": {
+      "num_layers": 1,
+      "hidden_channels": 54,
+      "lr": 0.005666833770221277,
+      "batch_size": 8,
+      "K": 1
+    },
+    "val_rmse": 151635.765625,
+    "n_trials": 40
+  },
+  "APPNP": {
+    "adj_matrix": "precision",
+    "params": {
+      "num_layers": 3,
+      "hidden_channels": 94,
+      "lr": 0.009672317406241103,
+      "batch_size": 2,
+      "K": 2,
+      "alpha": 0.05
+    },
+    "val_rmse": 145683.171875,
+    "n_trials": 40
+  }
+}

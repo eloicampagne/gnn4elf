@@ -1,0 +1,98 @@
+{
+ "Shared MLP": {
+  "rmse": 236543.5658122152,
+  "rmse_sd": 14578.425509201646,
+  "mape": 6.615441270249451,
+  "mape_sd": 0.30680436143846707,
+  "n": 10,
+  "cfg": {
+   "num_layers": 2,
+   "hidden_channels": 57,
+   "lr": 0.009987783232569797,
+   "batch_size": 4
+  },
+  "n_trials": 40
+ },
+ "Per-node MLP": {
+  "rmse": 325222.12608581234,
+  "rmse_sd": 8848.843777310181,
+  "mape": 9.407601145515066,
+  "mape_sd": 0.5105033308462621,
+  "n": 10,
+  "cfg": {
+   "num_layers": 3,
+   "hidden_channels": 83,
+   "lr": 0.007314840618896143,
+   "batch_size": 8
+  },
+  "n_trials": 40
+ },
+ "XGBoost (b-global)": {
+  "rmse": 263502.81052328344,
+  "rmse_sd": 900.9459902492465,
+  "mape": 7.671899800936207,
+  "mape_sd": 0.025252806788323562,
+  "n": 3,
+  "cfg": {
+   "learning_rate": 0.08212034747078158,
+   "max_depth": 10,
+   "min_child_weight": 8.400268385665365,
+   "subsample": 0.8870396169797536,
+   "colsample_bytree": 0.9377406000463263,
+   "reg_alpha": 0.000366110778888311,
+   "reg_lambda": 0.13280913565475938,
+   "n_estimators": 312
+  },
+  "n_trials": 40
+ },
+ "XGBoost (b-local)": {
+  "rmse": 288023.25378685864,
+  "rmse_sd": 0.0,
+  "mape": 8.507369457617052,
+  "mape_sd": 0.0,
+  "n": 3,
+  "cfg": {
+   "learning_rate": 0.1,
+   "max_depth": 4,
+   "min_child_weight": 1.0,
+   "subsample": 1.0,
+   "colsample_bytree": 1.0,
+   "n_estimators": 120
+  }
+ },
+ "GAM (b-global)": {
+  "rmse": 223498.69590605938,
+  "mape": 6.268756603154101,
+  "n": 1
+ },
+ "GAM (b-local)": {
+  "rmse": 329432.2611695563,
+  "mape": 10.70427188205229,
+  "n": 1
+ },
+ "Persistence--1 d": {
+  "rmse": 272074.85832809913,
+  "mape": 6.00710312082485,
+  "n": 1
+ },
+ "Persistence--7 d": {
+  "rmse": 283612.43057065166,
+  "mape": 9.416167695760558,
+  "n": 1
+ },
+ "ARIMA": {
+  "rmse": 860605.0485798431,
+  "mape": 18.664812253220926,
+  "n": 1,
+  "order": [
+   4,
+   0,
+   2
+  ]
+ },
+ "Chronos-Bolt": {
+  "rmse": 237449.30108176084,
+  "mape": 6.0165681340820045,
+  "n": 1
+ }
+}

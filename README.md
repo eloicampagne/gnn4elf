@@ -63,11 +63,11 @@ Table and figure numbers follow the preprint.
 ## Citation
 
 ```bibtex
-@article{campagne2025graph,
+@article{campagne2026diagnostic,
   author  = {Campagne, Eloi and Amara-Ouali, Yvenn and Goude, Yannig and Zehavi, Itai and Kalogeratos, Argyris},
   title   = {A Diagnostic Protocol for {GNNs} in Electricity Load Forecasting: Separating Parameter Sharing from Neighborhood Access},
   journal = {arXiv preprint arXiv:2507.03690},
-  year    = {2025}
+  year    = {2026}
 }
 
 @inproceedings{campagne2026graphtoolbox,

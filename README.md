@@ -18,7 +18,7 @@ The learned-adjacency control (`experiments/decomposition/learned_adjacency.py`)
 git clone https://github.com/nnzhan/MTGNN external/MTGNN
 ```
 
-The foundation-model baselines `t0_baseline.py` and `timestral_baseline.py` need their own packages (`t0`, `timestral`) and are not covered by `requirements.txt`.
+The foundation-model baselines `t0_baseline.py` and `timestral_baseline.py` need `tfc-t0` (0.6.0) and `timestral` (1.0.0), which are not in `requirements.txt`; the runs of the paper used a separate environment for them.
 
 ## Data
 
@@ -49,7 +49,7 @@ Scripts resolve every path from the repository root, so they can be launched fro
 
 | Paper | Scripts |
 |---|---|
-| Section 6.1, Tables 2 and 3, Table H.1 (hyperparameters) | `benchmark/benchmark_rfrance.py`, `benchmark/benchmark_weave500.py` (driven by `run_rfrance.sh`, `run_bench500.sh`), `benchmark/extra_baselines.py` (ARIMA-X, Chronos-2) |
+| Section 6.1, Tables 2 and 3, Table H.1 (hyperparameters) | `benchmark/benchmark_rfrance.py`, `benchmark/benchmark_weave500.py` (driven by `run_rfrance.sh`, `run_bench500.sh`), `benchmark/extra_baselines.py` (ARIMA-X, Chronos-2), `benchmark/t0_baseline.py`, `benchmark/timestral_baseline.py` |
 | Section 6.2, Figure 2, Tables C.1 and C.2, Figure C.3 | `french_regime/ib_lib.py`, `french_regime/expe_inductive_bias.ipynb`, `french_regime/french_nrmse.py` |
 | Section 6.3, Figure 3 | `synthetic/synth_gnn.py`, `synthetic/synth_sweep.py` |
 | Section 6.4, Table 4, Figure 4 | `decomposition/eval_metrics.py`, `decomposition/weave_nodes_metrics.py`, `decomposition/ltsf_nodes.py`, `decomposition/increment_intervals.py` |
@@ -58,7 +58,7 @@ Scripts resolve every path from the repository root, so they can be launched fro
 | Section 6.5, Appendix B | `aggregation/aggreg_experts.py`, `aggregation/add_expert.py`, `aggregation/gam_expert.py`, `aggregation/try_convs.py` |
 | Appendix G (representations) | `interpretability/extract_weave_latents.py`, `interpretability/interpretability.ipynb`, `interpretability/expe_interpretability.ipynb`; the REGIONS-FR latents come from GraphToolbox, `examples/load/compare_latent_representations.py` |
 
-Table and figure numbers follow the preprint. `t0_baseline.py`, `timestral_baseline.py`, `fm_diagnostics.py` and `fm_residual_correction.py` add foundation-model baselines that the current version of the paper does not report.
+Table and figure numbers follow the preprint.
 
 ## Citation
 

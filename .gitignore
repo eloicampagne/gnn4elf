@@ -44,3 +44,7 @@ results_inductive_bias/armsconvs_val.json
 results_inductive_bias/curve_bestconv_nolag.json
 results_inductive_bias/gridval_nolag.json
 results_synth_aggr/
+results_extra_baselines/*_t0_arx.json
+results_extra_baselines/rfrance_t0_calendar_variants.json
+results_extra_baselines/rfrance_t0_daytype.json
+results_extra_baselines/rfrance_timestral_nocov.json

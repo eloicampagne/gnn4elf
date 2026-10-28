@@ -1,6 +1,6 @@
 # gnn4elf
 
-Code for the paper *A Diagnostic Protocol for GNNs in Electricity Load Forecasting: Separating Parameter Sharing from Neighborhood Access* (Campagne, Amara-Ouali, Goude, Zehavi, and Kalogeratos), [arXiv:2507.03690](https://arxiv.org/abs/2507.03690).
+Code for the paper *A Diagnostic Protocol for GNNs in Electricity Load Forecasting: Separating Parameter Sharing from Neighborhood Access* (Campagne, Amara-Ouali, Goude, Zehavi, and Kalogeratos), [arXiv:2610.35074](https://arxiv.org/abs/2610.35074).
 
 A GNN that forecasts a collection of load series shares parameters across series and reads neighboring series. The protocol of the paper separates the two mechanisms by comparing the GNN with a per-node network, a network shared across nodes without neighbors, and the same GNN without edges, and it tests neighbor identity by degree-preserving rewiring. The models, graph constructions and training loops come from [GraphToolbox](https://github.com/eloicampagne/graphtoolbox) (Campagne et al., ICTAI 2026, [arXiv:2609.24609](https://arxiv.org/abs/2609.24609)); this repository holds the experiment scripts, their configurations and the summaries behind the tables of the paper.
 
@@ -66,7 +66,7 @@ Table and figure numbers follow the preprint.
 @article{campagne2026diagnostic,
   author  = {Campagne, Eloi and Amara-Ouali, Yvenn and Goude, Yannig and Zehavi, Itai and Kalogeratos, Argyris},
   title   = {A Diagnostic Protocol for {GNNs} in Electricity Load Forecasting: Separating Parameter Sharing from Neighborhood Access},
-  journal = {arXiv preprint arXiv:2507.03690},
+  journal = {arXiv preprint arXiv:2610.35074},
   year    = {2026}
 }
 

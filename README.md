@@ -2,7 +2,7 @@
 
 Code for the paper *A Diagnostic Protocol for GNNs in Electricity Load Forecasting: Separating Parameter Sharing from Neighborhood Access* (Campagne, Amara-Ouali, Goude, Zehavi, and Kalogeratos), [arXiv:2610.35074](https://arxiv.org/abs/2610.35074).
 
-A GNN that forecasts a collection of load series shares parameters across series and reads neighboring series. The protocol of the paper separates the two mechanisms by comparing the GNN with a per-node network, a network shared across nodes without neighbors, and the same GNN without edges, and it tests neighbor identity by degree-preserving rewiring. The models, graph constructions and training loops come from [GraphToolbox](https://github.com/eloicampagne/graphtoolbox) (Campagne et al., ICTAI 2026, [arXiv:2609.24609](https://arxiv.org/abs/2609.24609)); this repository holds the experiment scripts, their configurations and the summaries behind the tables of the paper.
+A GNN that forecasts a collection of load series shares parameters across series and reads neighboring series. The protocol of the paper separates the two mechanisms by comparing the GNN with a per-node network, a network shared across nodes without neighbors, and the same GNN without edges, and it tests neighbor identity by degree-preserving rewiring. The models, graph constructions and training loops come from [GraphToolbox](https://github.com/eloicampagne/graphtoolbox) (Campagne et al., 2026, [arXiv:2609.24609](https://arxiv.org/abs/2609.24609)); this repository holds the experiment scripts, their configurations and the summaries behind the tables of the paper.
 
 ## Installation
 
@@ -70,11 +70,11 @@ Table and figure numbers follow the preprint.
   year    = {2026}
 }
 
-@inproceedings{campagne2026graphtoolbox,
-  author    = {Campagne, Eloi and Amara-Ouali, Yvenn and Goude, Yannig and Kalogeratos, Argyris},
-  title     = {{GraphToolbox}: A Configurable {Python} Framework for Graph Neural Network Forecasting},
-  booktitle = {IEEE International Conference on Tools with Artificial Intelligence (ICTAI)},
-  year      = {2026}
+@article{campagne2026graphtoolbox,
+  author  = {Campagne, Eloi and Amara-Ouali, Yvenn and Goude, Yannig and Kalogeratos, Argyris},
+  title   = {{GraphToolbox}: A Configurable Framework for Controlled Benchmarking of Graph Neural Network Forecasting},
+  journal = {arXiv preprint arXiv:2609.24609},
+  year    = {2026}
 }
 ```
 
